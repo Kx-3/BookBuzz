@@ -29,7 +29,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="flex items-center gap-x-4">
-                {session && <div className="w-auto p-2 box-border inline-flex bg-wheat font-inter rounded-xl items-center gap-x-3">
+                {session && session.user && <div className="w-auto p-2 box-border inline-flex bg-wheat font-inter rounded-xl items-center gap-x-3">
                     <div className="w-7 h-7 md:w-10 md:h-10">
                         <img className="w-full h-full object-cover rounded-lg" src={session.user.user_metadata.avatar_url} alt="User Img" />
                     </div>
