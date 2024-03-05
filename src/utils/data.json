@@ -1,0 +1,741 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 870,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "qLuwzgEACAAJ",
+        "etag": "RlI1ERz/sH8",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/qLuwzgEACAAJ",
+        "volumeInfo": {
+          "title": "Wild Flowers",
+          "subtitle": "Of Britain and Ireland",
+          "authors": [
+            "Roger Phillips"
+          ],
+          "publisher": "MacMillan UK",
+          "publishedDate": "2022-04-14",
+          "description": "Comprehensive and featuring beautiful photographs, Wild Flowers is a must-have for all enthusiasts of the natural world, by acclaimed photographer and author Roger Phillips.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "152908220X"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781529082203"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 304,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=qLuwzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=qLuwzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=qLuwzgEACAAJ&dq=flowers&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=qLuwzgEACAAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Wild_Flowers.html?hl=&id=qLuwzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=qLuwzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The authoritative text contains fascinating details of each flower&#39;s description, leaves, size, habitat and growing time to help make identification accurate and straightforward."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "uJvEEAAAQBAJ",
+        "etag": "5A0hEmS9jWg",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/uJvEEAAAQBAJ",
+        "volumeInfo": {
+          "title": "How to Grow Flowers in Small Spaces",
+          "subtitle": "An Illustrated Guide to Planning, Planting, and Caring for Your Small Space Flower Garden",
+          "authors": [
+            "Stephanie Walker"
+          ],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2024-03-19",
+          "description": "Take your gardening to the next level…with flowers! After learning how to manage their houseplants and grow their own food, this highly stylized, fully illustrated, modern guidebook teaches reluctant green thumbs to brighten up their gardens with flowers. Did you know that begonias can be dug up in the fall, stored indoors in the winter, and be ready to be planted and bloom again in the spring? That daylilies need to be divided every three to four years to produce more blooms? Or that marigolds can be both a beautiful and helpful addition to a vegetable garden as a natural deterrent to common garden pests? Whether you’re a first-time gardener or an experienced green thumb looking to learn more about flowers, this book is your must-have guide! How to Grow Flowers in Small Spaces features 40 beautiful flowers (from smaller pincushion flowers to towering lilacs) that can all be grown in containers or small spaces. Along with detailed care instructions and beautiful illustrations of each plant, you’ll also find everything you need to know for your floral garden to flourish, including: -How to establish a garden bed (no matter the size!) -How to determine which flowers are best grown from seeds or from transplants -How to water your flowers for optimal growth (whether they’re in the ground or in a container) -How to turn those blooms into a beautiful home-grown bouquet -And much more! No more trips to the florist—with How to Grow Flowers in Small Spaces, your home and garden will be bursting with color to keep you healthier and happier than ever. From peonies and marigolds to snapdragons and foxgloves, grab your gloves and get to gardening!",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781507220498"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1507220499"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 190,
+          "printType": "BOOK",
+          "categories": [
+            "Gardening"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.2.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=uJvEEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=uJvEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=uJvEEAAAQBAJ&dq=flowers&hl=&cd=2&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=uJvEEAAAQBAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/How_to_Grow_Flowers_in_Small_Spaces.html?hl=&id=uJvEEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=uJvEEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Whether you’re a first-time gardener or an experienced green thumb looking to learn more about flowers, this book is your must-have guide!"
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "UxgN0AEACAAJ",
+        "etag": "Ths0Ve6at3U",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/UxgN0AEACAAJ",
+        "volumeInfo": {
+          "title": "Origami Paper 100 Sheets Japanese Flowers 6 Inches (15 Cm)",
+          "subtitle": "High Quality Double-Sided",
+          "authors": [
+            "Tuttle Studio"
+          ],
+          "publishedDate": "2024-03-19",
+          "description": "This origami paper pack contains 100 high-quality origami sheets printed with 12 different natural-looking and attractive Japanese flower patterns and prints. The handmade look of this paper was selected to enhance the creative work of modular origami artists and paper crafters. The pack contains prints unique to this package, and each sheet has a solid coordinating color on the back side. This origami paper pack includes: 100 sheets of high-quality origami paper 12 colorful Japanese-style designs and patterns Double-sided color 6 x 6 inch (15 cm) squares Instructions for 5 easy origami projects There's enough paper here to create beautiful folded models, distribute to students for a class project, or put to a multitude of other creative uses from scrapbooking to bullet journaling!",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0804856990"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780804856997"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "categories": [
+            "Antiques & Collectibles"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=UxgN0AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=UxgN0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=UxgN0AEACAAJ&dq=flowers&hl=&cd=3&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=UxgN0AEACAAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Origami_Paper_100_Sheets_Japanese_Flower.html?hl=&id=UxgN0AEACAAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=UxgN0AEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The handmade look of this paper was selected to enhance the creative work of modular origami artists and paper crafters. The pack contains prints unique to this package, and each sheet has a solid coordinating color on the back side."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "F1bGEAAAQBAJ",
+        "etag": "YiBUuqE0BfM",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/F1bGEAAAQBAJ",
+        "volumeInfo": {
+          "title": "A Short History of Flowers",
+          "subtitle": "The Stories that Make Our Gardens",
+          "authors": [
+            "Advolly Richmond"
+          ],
+          "publisher": "Frances Lincoln Children's Books",
+          "publishedDate": "2024-03-05",
+          "description": "In A Short History of Flowers, Advolly Richmond of Gardeners’ World explores the exciting stories behind the most popular flowers.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780711282223"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0711282226"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 210,
+          "printType": "BOOK",
+          "categories": [
+            "Gardening"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=F1bGEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=F1bGEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=F1bGEAAAQBAJ&printsec=frontcover&dq=flowers&hl=&cd=4&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=F1bGEAAAQBAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/A_Short_History_of_Flowers.html?hl=&id=F1bGEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/A_Short_History_of_Flowers-sample-pdf.acsm?id=F1bGEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=F1bGEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In A Short History of Flowers, Advolly Richmond of Gardeners&#39; World explores the exciting stories behind the most popular garden flowers."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "BgDYEAAAQBAJ",
+        "etag": "tk5By8C4omE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/BgDYEAAAQBAJ",
+        "volumeInfo": {
+          "title": "A Garden of Flowers",
+          "authors": [
+            "Michael Rosenblum"
+          ],
+          "publisher": "Austin Macauley Publishers",
+          "publishedDate": "2023-09-15",
+          "description": "A Garden of Flowers is a beautiful and heartwarming celebration of diversity and uniqueness. It reminds young readers that every person brings a valuable perspective to our world, making it a more vibrant and exciting place to live in. A sequel to Michael Rosenblum’s popular The Caterpillar and the Butterfly, in A Garden of Flowers we see the return of the butterfly Faith who helps bring understanding and peace to a squabbling garden. The book’s message is clear: we are ALL born as a special gift to teach each other about ourselves. The delightful full-page artwork accompanying the story adds a touch of magic, bringing to life the colorful world of flowers and their unique characteristics. The story acknowledges that just as every flower in a garden is different and beautiful, every person is beautifully unique and special in their own way. It teaches children the importance of accepting and celebrating differences and diversity, and how our differences make our world a dynamic and fascinating place to live in. After all, if all our colors were the same, we wouldn’t have rainbows.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781035826797"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1035826798"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 36,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.3.2.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=BgDYEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=BgDYEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=BgDYEAAAQBAJ&printsec=frontcover&dq=flowers&hl=&cd=5&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=BgDYEAAAQBAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/A_Garden_of_Flowers.html?hl=&id=BgDYEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/A_Garden_of_Flowers-sample-epub.acsm?id=BgDYEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/A_Garden_of_Flowers-sample-pdf.acsm?id=BgDYEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=BgDYEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The story acknowledges that just as every flower in a garden is different and beautiful, every person is beautifully unique and special in their own way."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "I8OBEAAAQBAJ",
+        "etag": "LZmfIelKfRM",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/I8OBEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Flower Magic of the Druids",
+          "subtitle": "How to Craft Potions, Spells, and Enchantments",
+          "authors": [
+            "Jon G. Hughes"
+          ],
+          "publisher": "Simon and Schuster",
+          "publishedDate": "2023-05-02",
+          "description": "A practical guide to using flowers in magical practice • Provides detailed instruction on every stage of the harvesting, crafting, and practical use of flower magic potions, including a comprehensive herbarium of all the flowers that may be used • Discusses what type of flower and form of flower magic is best for specific enchantments and rituals in the areas of love and sex magic, healing and focusing, and protection • Looks at the physical and spiritual gifts of bees and the importance of bee culture in Druidic flower magic Flowers are found in magic traditions around the world, from those in ancient Egypt, China, and India to the traditions of the Norse and Native Americans. Yet many of today’s well-established flower traditions—like bridal bouquets—originated in the Druidic magical lore of Wales, Ireland, and Scotland. As fifth-generation Druid Jon G. Hughes explains, flowers hold a preeminent position in Druidic folk magic with their own special branch of magical workings. In this practical guide, Hughes details how to use flowers in magical practice, focusing on flowering plants with a long history of magical use going back to Druidic times yet many of which are commonly found throughout the world, such as buttercup, blackberry, and dog rose. He discusses what type of flower and form of flower magic is best for specific enchantments and rituals in the areas of love and sex magic, well-being and good fortune, and protection. He looks at the magical use of fresh flowers and provides detailed instruction on every stage of the harvesting, crafting, and practical use of flower magic potions, including a comprehensive herbarium of all the flowers that may be used. Examining the complex relationship between flowers and bees, the author looks at the physical and spiritual gifts of bees, such as honey, propolis, and beeswax, and the importance of bee culture in Druidic flower magic, including the tradition of the honeymoon, the significance of the hexagon, and medieval beekeeper lore. Inviting you into the gentle yet powerful realm of Druidic flower magic, the author also details how to plan, plant, and take care of your own magical flower garden with all the botanicals you will need to pursue the path of flower magic.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781644116401"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1644116405"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 207,
+          "printType": "BOOK",
+          "categories": [
+            "Body, Mind & Spirit"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.1.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=I8OBEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=I8OBEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=I8OBEAAAQBAJ&printsec=frontcover&dq=flowers&hl=&cd=6&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=I8OBEAAAQBAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Flower_Magic_of_the_Druids.html?hl=&id=I8OBEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Flower_Magic_of_the_Druids-sample-epub.acsm?id=I8OBEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=I8OBEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "In this practical guide, Hughes details how to use flowers in magical practice, focusing on flowering plants with a long history of magical use going back to Druidic times yet many of which are commonly found throughout the world, such as ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "_2ncEAAAQBAJ",
+        "etag": "2Rb92O1i8TI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/_2ncEAAAQBAJ",
+        "volumeInfo": {
+          "title": "Seeds",
+          "subtitle": "Grow Your Own Cut Flowers from Scratch",
+          "authors": [
+            "Milli Proust"
+          ],
+          "publisher": "Hardie Grant Publishing",
+          "publishedDate": "2024-03-14",
+          "description": "From sowing and germination, to sprouting, repotting and harvesting, The Grower’s Guide: Seeds is a modern and practical handbook that will take you through all the essential steps to growing your own cut flowers from seed. Beautifully photographed throughout, this essential guide demystifies the growing process through simple, easy-to-follow instructions, defined by Milli Proust’s unique sense of style. Featuring a sowing directory of 30 flowers to grow, learn how to get the most from your soil, tackle common gardening problems, and produce beautiful blooms in a sustainable way. The Grower's Guide is a brand new gardening series for those who seek an approachable and accessible insight into the wonderful world of flower growing and floral arranging.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781837831814"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1837831815"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 149,
+          "printType": "BOOK",
+          "categories": [
+            "Gardening"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.2.2.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=_2ncEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=_2ncEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=_2ncEAAAQBAJ&dq=flowers&hl=&cd=7&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=_2ncEAAAQBAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Seeds.html?hl=&id=_2ncEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=_2ncEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Beautifully photographed throughout, this essential guide demystifies the growing process through simple, easy-to-follow instructions, defined by Milli Proust’s unique sense of style."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "tjqsEAAAQBAJ",
+        "etag": "JhpOs6FOZks",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/tjqsEAAAQBAJ",
+        "volumeInfo": {
+          "title": "The Encyclopedia of Cut Flowers",
+          "subtitle": "What Flowers to Buy, When to Buy Them, and How to Keep Them Alive Longer",
+          "authors": [
+            "Calvert Crary"
+          ],
+          "publisher": "Black Dog & Leventhal",
+          "publishedDate": "2023-10-10",
+          "description": "From Calvert Crary and Bruce Littlefield, The Encyclopedia of Cut Flowers is a comprehensive, gorgeously visual guide that answers every question you've ever had (and a few you didn't know to ask!) about buying, caring for, and prolonging the lives of more than 140 different varieties of commonly available cut flowers. The Encyclopedia of Cut Flowers dives deep into the world of fresh-cut flowers, featuring unique entries for 143 different varieties of commonly available cut flowers that readers can buy at their local grocery store or flower market. Each flower entry offers authoritative tips for conditioning methods (eg\u00ad–cut flowers should never be put near fresh fruit because fruit produces ethylene gas which will shorten the flowers' life), as well as scientific and common names, best seasons for buying (eg—lilies in spring, dahlias in summer) and fascinating facts about each bloom. An introductory section offers basic tips for styling arrangements at home, and for keeping flowers hydrated and alive for as long as possible. By the time readers are done flipping through the pages of The Encyclopedia of Cut Flowers, which features more than 150 gorgeous color photographs of flowers, they'll be experts in the field!",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780762483297"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0762483296"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 366,
+          "printType": "BOOK",
+          "categories": [
+            "Crafts & Hobbies"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.3.3.0.preview.2",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=tjqsEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=tjqsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=tjqsEAAAQBAJ&dq=flowers&hl=&cd=8&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=tjqsEAAAQBAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Encyclopedia_of_Cut_Flowers.html?hl=&id=tjqsEAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true
+          },
+          "pdf": {
+            "isAvailable": true
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=tjqsEAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "From Calvert Crary and Bruce Littlefield, The Encyclopedia of Cut Flowers is a comprehensive, gorgeously visual guide that answers every question you&#39;ve ever had (and a few you didn&#39;t know to ask!) about buying, caring for, and prolonging ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "MPXszgEACAAJ",
+        "etag": "H7btNgZMVRU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/MPXszgEACAAJ",
+        "volumeInfo": {
+          "title": "Flowers for Friends",
+          "subtitle": "Casual, Seasonal Arranging for Gardeners",
+          "authors": [
+            "Julia Atkinson-Dunn"
+          ],
+          "publishedDate": "2021",
+          "description": "This is a book about flower arranging from the perspective of a gardener. Harvesting from the garden means short, wonky stems, bruised petals, insects crawling out of blooms and the open invitation to claim a weed or vege as vase fodder. Flowers for Friends is both a reflection, and story of the seasons brought indoors by Julia Atkinson-Dunn when harvesting from her garden and foraging in Canterbury, New Zealand. Written in her signature casual tone (as seen in her first book Petal Power), Julia offers an accessible guide to picking, conditioning and arranging home-grown treasures, celebrating their quirks and encouraging unexpected combinations. Seasonal chapters profile arrangements she has made, detailing plants in season and inviting readers to play without the hunt for perfection, or restraint.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0473587688"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780473587680"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "categories": [
+            "Bouquets"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=MPXszgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=MPXszgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=MPXszgEACAAJ&dq=flowers&hl=&cd=9&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=MPXszgEACAAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Flowers_for_Friends.html?hl=&id=MPXszgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=MPXszgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot;This is a book about flower arranging from the perspective of a gardener."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "l57wzgEACAAJ",
+        "etag": "3dmO6+WC/JY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/l57wzgEACAAJ",
+        "volumeInfo": {
+          "title": "The Wisdom of Flowers",
+          "subtitle": "Essential Life Lessons for Joy and Wellbeing",
+          "authors": [
+            "Liz Marvin"
+          ],
+          "publisher": "LOM ART",
+          "publishedDate": "2023-07-21",
+          "description": "Taking sixty of the world's most amazing flowers and flowering plants, including the corpse flower from Indonesia, the voodoo lily from the Mediterranean, the giant water lily from South America and the vegetable sheep plant from New Zealand, this book will share their unique symbolism and the characteristics and strengths that allow them to thrive, inspiring us to follow their example and make the most out of every moment.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "1912785897"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9781912785896"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=l57wzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=l57wzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=l57wzgEACAAJ&dq=flowers&hl=&cd=10&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=l57wzgEACAAJ&dq=flowers&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/The_Wisdom_of_Flowers.html?hl=&id=l57wzgEACAAJ"
+        },
+        "saleInfo": {
+          "country": "KE",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "KE",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=l57wzgEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "&quot;This beautifully illustrated book will share the infinite wisdom of flowers, providing inspiration from nature to gain perspective, resilience and live a beautiful life."
+        }
+      }
+    ]
+  }
