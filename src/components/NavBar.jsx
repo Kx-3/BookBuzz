@@ -29,12 +29,12 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="flex items-center gap-x-4">
-                <div className="w-auto p-2 box-border inline-flex bg-wheat font-inter rounded-xl items-center gap-x-3">
+                {session && <div className="w-auto p-2 box-border inline-flex bg-wheat font-inter rounded-xl items-center gap-x-3">
                     <div className="w-7 h-7 md:w-10 md:h-10">
                         <img className="w-full h-full object-cover rounded-lg" src={session.user.user_metadata.avatar_url} alt="User Img" />
                     </div>
                     <h2 className="hidden md:block">{session.user.user_metadata.full_name}</h2>
-                </div>
+                </div>}
                 <button onClick={signOut} className="bg-wheat rounded-full md:scale-150 w-10 h-10 flex items-center justify-center"><IoIosLogOut /></button>
             </div>
         </nav>
