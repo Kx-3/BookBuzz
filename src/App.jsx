@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     // Fetch data from Google Books API
-    const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}+intitle:${search}&key=${G_KEY}`;
+    const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`;
     const fetchGoogleBooks = async () => {
       const response = await fetch(googleUrl);
       const data = await response.json()

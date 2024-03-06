@@ -7,7 +7,8 @@ const Login = () => {
     async function handleSignInWithGoogle(e) {
         e.preventDefault()
         const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: 'google'
+            provider: 'google',
+            options: {redirectTo:"https://book-buzz.vercel.app/home"}
         })
         if(error) {
             console.log(error)

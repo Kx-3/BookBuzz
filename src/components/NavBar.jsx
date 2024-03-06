@@ -8,7 +8,7 @@ import { AuthContext } from "../context/AuthContext"
 import { supabase } from "../utils/supabaseConfig";
 
 const NavBar = () => {
-    const { session } = useContext(AuthContext)
+    const { session, search, handleSearch, handleInput } = useContext(AuthContext)
     async function signOut() {
         const { error } = await supabase.auth.signOut()
         if (error) {
@@ -23,9 +23,12 @@ const NavBar = () => {
                 <div className="w-32 h-12 md:w-52 md:h-20">
                     <img className="w-full h-full object-cover" src={logo} alt="Logo" />
                 </div>
-                <div className="h-10 px-2 rounded-lg gap-x-3 flex items-center border-black border-1 bg-wheat w-64 md:w-auto lg:w-96">
+                <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64 md:w-auto lg:w-96">
                     <CiSearch />
-                    <input className="font-inter focus:outline-none bg-transparent" type="text" placeholder="Search" />
+                    <form action="" className="flex" onSubmit={handleSearch}>
+                        <input className="w-5/6 font-inter focus:outline-none bg-transparent" type="text" placeholder="Search" value={search} onChange={handleInput} />
+                        <button type="submit" className="w-[100px] h-10 bg-teal-900 font-lexend hover:text-slate-100 hover:bg-teal-700 text-white rounded-lg">Search</button>
+                    </form>
                 </div>
             </div>
             <div className="flex items-center gap-x-4">

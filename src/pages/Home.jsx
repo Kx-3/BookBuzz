@@ -2,9 +2,13 @@ import data from "../utils/data.json"
 import NavBar from "../components/NavBar"
 import BookCard from "../components/BookCard"
 import {Link} from "react-router-dom"
+import { useContext } from "react"
+import { AuthContext } from "../context/AuthContext"
 import "../App.css"
 
 const Home = () => {
+    const { searchResults } = useContext(AuthContext)
+    console.log(searchResults)
 
     return (
         <>
