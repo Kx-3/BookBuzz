@@ -24,10 +24,6 @@ const paths = createBrowserRouter([
     element: <Book />
   },
   {
-    path: '/search',
-    element: <SearchResults />
-  },
-  {
     path: '/bestsellers',
     element: <BestSellers />
   },

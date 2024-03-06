@@ -3,14 +3,31 @@ import NavBar from "../components/NavBar"
 import useFetch from "../hooks/useFetch"
 import BookCard from "../components/BookCard"
 import {Link} from "react-router-dom"
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import { AuthContext } from "../context/AuthContext"
 import coverimage from "../assets/coverimage.png"
 import "../App.css"
 
 const Home = () => {
     const { session, searchResults } = useContext(AuthContext)
-    const discoverbooks = useFetch("https://www.googleapis.com/books/v1/mylibrary/bookshelves/8/volumes")
+    const url = "https://www.googleapis.com/books/v1/mylibrary/bookshelves/8/volumes"
+    const [discoverbooks, setDiscoverBooks] = useState(null)
+    const fetchData = async () => {
+        try {
+            const response = await fetch(url, {
+                headers: {
+                    "Authorization": `Bearer ${session.access_token}`
+                }
+            })
+            const data = await response.json()
+            setDiscoverBooks(data)
+        } catch(error){
+            console.error(error)
+        }
+    }
+    useEffect(()=> {
+        fetchData()
+    },[url])
     console.log(discoverbooks)
     
     return (
