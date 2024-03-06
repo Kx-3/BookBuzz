@@ -25,13 +25,15 @@ const Home = () => {
             console.error(error)
         }
     }
-    useEffect(() => {
-        if(session){
-            fetchData()
-        }
-    }, [url])
+    // useEffect(() => {
+    //     if(session){
+    //         fetchData()
+    //     }
+    // }, [url])
     console.log(discoverbooks)
     if (session) {
+        fetchData()
+        console.log(discoverbooks)
         console.log(session.access_token)
     }
 
