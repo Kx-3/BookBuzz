@@ -26,7 +26,9 @@ const Home = () => {
         }
     }
     useEffect(() => {
-        fetchData()
+        if(session){
+            fetchData()
+        }
     }, [url])
     console.log(discoverbooks)
     if (session) {
