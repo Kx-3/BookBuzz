@@ -7,7 +7,7 @@ import { AuthContext } from "../context/AuthContext"
 import "../App.css"
 
 const Home = () => {
-    const { searchResults } = useContext(AuthContext)
+    const { session, searchResults } = useContext(AuthContext)
 
     
     return (
