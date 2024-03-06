@@ -29,6 +29,7 @@ const Home = () => {
         fetchData()
     },[url])
     console.log(discoverbooks)
+    console.log(session.access_token)
     
     return (
         <>
