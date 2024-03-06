@@ -38,7 +38,7 @@ const Home = () => {
                 <h3 className="font-lexend text-4xl text-teal-900 my-10 ml-10">POPULAR</h3>
                 <div className="flex flex-wrap gap-4 md:px-16 mx-auto">
                     {
-                        data.items.map((book) => {
+                        searchResults.items.map((book) => {
                             return (
                                 <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks.thumbnail} author={book.volumeInfo.authors[0]} title={book.volumeInfo.title}/></Link>
                             )
