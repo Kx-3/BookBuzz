@@ -41,7 +41,12 @@ const Home = () => {
                     }
                 </div>
             </div>
-            </> : window.location.href = "/"}
+            </> : <>
+            <div>
+                <h1 className="font-lexend text-xl">Ooops....You aren't logged in</h1>
+                <Link to="/"><button className="flex justify-center items-center px-8 py-4 bg-teal-900 text-white font-semibold hover:bg-teal-700 rounded-full gap-x-5 my-10">Go Log In</button></Link>
+            </div>
+            </>}
         </>
     )
 }
