@@ -9,12 +9,7 @@ import "../App.css"
 const Home = () => {
     const { searchResults } = useContext(AuthContext)
 
-    if (searchResults == null) {
-        return (
-            <>Loading...</>
-        )
-    }
-
+    
     return (
         <>
             {/* <NavBar />
