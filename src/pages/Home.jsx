@@ -1,5 +1,6 @@
 import data from "../utils/data.json"
 import NavBar from "../components/NavBar"
+import useFetch from "../hooks/useFetch"
 import BookCard from "../components/BookCard"
 import {Link} from "react-router-dom"
 import { useContext } from "react"
@@ -9,8 +10,8 @@ import "../App.css"
 
 const Home = () => {
     const { session, searchResults } = useContext(AuthContext)
-    console.log(session)
-
+    const discoverbooks = useFetch("https://www.googleapis.com/books/v1/mylibrary/bookshelves/8/volumes")
+    console.log(discoverbooks)
     
     return (
         <>

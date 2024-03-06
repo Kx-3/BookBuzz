@@ -19,6 +19,7 @@ const AuthProvider = ({ children }) => {
     const handleSearch = (e) => {
         e.preventDefault()
         setSearchResults(data)
+        window.location.href = '/search'
 
     }
 

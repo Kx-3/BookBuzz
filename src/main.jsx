@@ -7,6 +7,7 @@ import Login from './pages/Login.jsx'
 import Home from './pages/Home.jsx'
 import BestSellers from './pages/BestSellers.jsx'
 import Book from './pages/Book.jsx'
+import SearchResults from './pages/SearchResults.jsx'
 import { AuthProvider } from "./context/AuthContext.jsx"
 
 const paths = createBrowserRouter([
@@ -21,6 +22,10 @@ const paths = createBrowserRouter([
   {
     path: '/book/:id',
     element: <Book />
+  },
+  {
+    path: '/search',
+    element: <SearchResults />
   },
   {
     path: '/bestsellers',
