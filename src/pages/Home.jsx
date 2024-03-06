@@ -36,7 +36,7 @@ const Home = () => {
                     {
                         searchResults && searchResults.items && searchResults.items.map((book) => {
                             return (
-                                <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail: coverimage} author={book.volumeInfo.authors[0]} title={book.volumeInfo.title}/></Link>
+                                <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail: coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0]: "Not found"} title={book.volumeInfo.title}/></Link>
                             )
                         })
                     }
