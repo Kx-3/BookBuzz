@@ -8,7 +8,7 @@ const AuthProvider = ({ children }) => {
     const G_KEY = 'AIzaSyAlo2RyJuMgWOZ6BoNSUm4GwbJ6fiJ-Jpw'
     const [session, setSession] = useState(null)
     const [search, setSearch] = useState('')
-    const [searchResults, setSearchResults] = useState([])
+    const [searchResults, setSearchResults] = useState(null)
     const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`
     const data = useFetch(googleUrl)
 
