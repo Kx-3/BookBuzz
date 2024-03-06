@@ -9,6 +9,7 @@ import "../App.css"
 
 const Home = () => {
     const { session, searchResults } = useContext(AuthContext)
+    console.log(session)
 
     
     return (
