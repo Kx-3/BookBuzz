@@ -4,6 +4,7 @@ import BookCard from "../components/BookCard"
 import {Link} from "react-router-dom"
 import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
+import coverimage from "../assets/coverimage.png"
 import "../App.css"
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
                     {
                         searchResults && searchResults.items && searchResults.items.map((book) => {
                             return (
-                                <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks.thumbnail} author={book.volumeInfo.authors[0]} title={book.volumeInfo.title}/></Link>
+                                <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail: coverimage} author={book.volumeInfo.authors[0]} title={book.volumeInfo.title}/></Link>
                             )
                         })
                     }
