@@ -5,6 +5,8 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './pages/Login.jsx'
 import Home from './pages/Home.jsx'
+import BestSellers from './pages/BestSellers.jsx'
+import Book from './pages/Book.jsx'
 import { AuthProvider } from "./context/AuthContext.jsx"
 
 const paths = createBrowserRouter([
@@ -15,6 +17,14 @@ const paths = createBrowserRouter([
   {
     path: '/home',
     element: <Home />
+  },
+  {
+    path: '/book/:id',
+    element: <Book />
+  },
+  {
+    path: '/bestsellers',
+    element: <BestSellers />
   },
 ])
 
