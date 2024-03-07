@@ -8,12 +8,17 @@ const AuthProvider = ({ children }) => {
     const G_KEY = 'AIzaSyAlo2RyJuMgWOZ6BoNSUm4GwbJ6fiJ-Jpw'
     const [session, setSession] = useState(null)
     const [search, setSearch] = useState('')
+    const [toggle, setToggle] = useState(false)
     const [searchResults, setSearchResults] = useState(null)
     const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`    
     const data = useFetch(googleUrl)
 
     const handleInput = (e) => {
         setSearch(e.target.value)
+    }
+
+    const handleToggle = () => {
+        setToggle(!toggle)
     }
 
     const handleSearch = (e) => {
@@ -37,7 +42,7 @@ const AuthProvider = ({ children }) => {
     }, [])
 
     return (
-        <AuthContext.Provider value={{ session, search, searchResults, handleInput, handleSearch }}>
+        <AuthContext.Provider value={{ session, search, searchResults, handleInput, handleSearch, toggle, handleToggle }}>
             {children}
         </AuthContext.Provider>
     )

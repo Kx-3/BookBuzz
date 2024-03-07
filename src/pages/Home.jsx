@@ -32,7 +32,7 @@ const Home = () => {
             {session ? <>
                 <NavBar />
 
-                <div className="flex flex-col bg-wheat w-4/5 justify-self-end">
+                <div className="flex flex-col bg-wheat">
                     <h3 className="font-lexend text-4xl text-teal-900 my-10 ml-10">POPULAR</h3>
                     <div className="flex flex-wrap gap-4 md:px-16 mx-auto">
                         {

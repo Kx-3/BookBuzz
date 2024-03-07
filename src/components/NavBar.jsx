@@ -5,12 +5,13 @@ import { IoIosLogOut } from "react-icons/io";
 import "../App.css"
 import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
+import { GiHamburgerMenu } from "react-icons/gi";
 import { supabase } from "../utils/supabaseConfig";
 import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 
 const NavBar = () => {
-    const { session, search, handleSearch, handleInput } = useContext(AuthContext)
+    const { session, search, handleSearch, handleInput, toggle, handleToggle } = useContext(AuthContext)
     async function signOut() {
         const { error } = await supabase.auth.signOut()
         if (error) {
@@ -22,6 +23,7 @@ const NavBar = () => {
     return (
         <nav className="w-auto bg-peach flex items-center justify-between py-4 md:py-8 md:pr-24 px-6">
             <div className="flex items-center gap-x-4 md:gap-x-32">
+                <button onClick={handleToggle}><GiHamburgerMenu /></button>
                 <div className="w-32 h-12 md:w-52 md:h-20">
                     <Link to="/home"><img className="w-full h-full object-cover" src={logo} alt="Logo" /></Link>
                 </div>
@@ -42,7 +44,7 @@ const NavBar = () => {
                 </div>}
                 <button onClick={signOut} className="bg-wheat rounded-full md:scale-150 w-10 h-10 flex items-center justify-center"><IoIosLogOut /></button>
             </div>
-            <SideBar/>
+            {toggle && <SideBar />}
         </nav>
     )
 }
