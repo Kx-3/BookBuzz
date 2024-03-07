@@ -5,14 +5,17 @@ import BookCard from "../components/BookCard"
 import { Link } from "react-router-dom"
 import useFetch from "../hooks/useFetch"
 import { useState } from "react"
+import { useContext } from "react"
+import { AuthContext } from "../context/AuthContext"
 
 const BestSellers = () => {
-    const [bestSellers, setBestSellers] = useState(null)
+    const { session } = useContext(AuthContext)
+    const [list, setList] = useState(null)
     const TIMES_KEY = 'MENH0JaFr7qfGXhh4KumJ4voGuddZQeo'
     const timesUrl = `https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${TIMES_KEY}`
     const data = useFetch(timesUrl)
-    setBestSellers(data)
-    console.log(bestSellers)
+    setList(data)
+    console.log(list)
 
     return (
         <>
