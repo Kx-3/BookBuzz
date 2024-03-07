@@ -13,8 +13,11 @@ const AuthProvider = ({ children }) => {
     const [bestSellers, setBestSellers] = useState(null)
     const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`
     const timesUrl = `https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${TIMES_KEY}`
-    const data2 = useFetch(timesUrl)
-    setBestSellers(data2)
+    useEffect(()=>{
+        const data2 = useFetch(timesUrl)
+        setBestSellers(data2)
+    }, [])
+    
     const data = useFetch(googleUrl)
 
     const handleInput = (e) => {
