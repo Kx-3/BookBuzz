@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar"
 import BookCard from "../components/BookCard"
 import { Link } from "react-router-dom"
 import useFetch from "../hooks/useFetch"
+import { useState } from "react"
 
 const BestSellers = () => {
     const [bestSellers, setBestSellers] = useState(null)
