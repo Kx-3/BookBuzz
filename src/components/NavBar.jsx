@@ -7,6 +7,7 @@ import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
 import { supabase } from "../utils/supabaseConfig";
 import { Link } from "react-router-dom";
+import SideBar from "./SideBar";
 
 const NavBar = () => {
     const { session, search, handleSearch, handleInput } = useContext(AuthContext)
@@ -41,6 +42,7 @@ const NavBar = () => {
                 </div>}
                 <button onClick={signOut} className="bg-wheat rounded-full md:scale-150 w-10 h-10 flex items-center justify-center"><IoIosLogOut /></button>
             </div>
+            <SideBar/>
         </nav>
     )
 }
