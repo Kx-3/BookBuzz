@@ -7,7 +7,7 @@ const AuthContext = createContext()
 const AuthProvider = ({ children }) => {
     const G_KEY = 'AIzaSyAlo2RyJuMgWOZ6BoNSUm4GwbJ6fiJ-Jpw'
     const [session, setSession] = useState(null)
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState('best')
     const [toggle, setToggle] = useState(false)
     const [searchResults, setSearchResults] = useState(null)
     const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`    
