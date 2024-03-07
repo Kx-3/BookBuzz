@@ -6,6 +6,7 @@ import "../App.css"
 import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
 import { supabase } from "../utils/supabaseConfig";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const { session, search, handleSearch, handleInput } = useContext(AuthContext)
@@ -21,7 +22,7 @@ const NavBar = () => {
         <nav className="w-auto bg-peach flex items-center justify-between py-4 md:py-8 md:pr-24 px-6">
             <div className="flex items-center gap-x-4 md:gap-x-32">
                 <div className="w-32 h-12 md:w-52 md:h-20">
-                    <img className="w-full h-full object-cover" src={logo} alt="Logo" />
+                    <Link to="/home"><img className="w-full h-full object-cover" src={logo} alt="Logo" /></Link>
                 </div>
                 <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64 md:w-auto lg:w-96">
                     <CiSearch />
