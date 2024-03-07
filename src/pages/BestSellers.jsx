@@ -2,12 +2,15 @@ import data1 from "../utils/bestsellers1.json"
 import data2 from "../utils/bestsellers2.json"
 import NavBar from "../components/NavBar"
 import BookCard from "../components/BookCard"
-import { useContext } from "react"
-import { AuthContext } from "../context/AuthContext"
 import { Link } from "react-router-dom"
+import useFetch from "../hooks/useFetch"
 
 const BestSellers = () => {
-    const { bestSellers, session } = useContext(AuthContext)
+    const [bestSellers, setBestSellers] = useState(null)
+    const TIMES_KEY = 'MENH0JaFr7qfGXhh4KumJ4voGuddZQeo'
+    const timesUrl = `https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${TIMES_KEY}`
+    const data = useFetch(timesUrl)
+    setBestSellers(data)
     console.log(bestSellers)
 
     return (
