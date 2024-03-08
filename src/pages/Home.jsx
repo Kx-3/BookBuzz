@@ -22,7 +22,9 @@ const Home = () => {
         setDiscoverbooks(data)
     }
     useEffect(()=>{
-        fetchBooks()
+        if(session !== null){
+            fetchBooks()
+        }
     }, [])
     console.log(discoverbooks)
     console.log(session)
