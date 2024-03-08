@@ -26,7 +26,7 @@ const Home = () => {
         if(session !== null){
             fetchBooks()
         }
-    }, [])
+    })
     // console.log(session)
 
     return (
