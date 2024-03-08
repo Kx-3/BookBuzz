@@ -25,6 +25,7 @@ const Home = () => {
         fetchBooks()
     }, [])
     console.log(discoverbooks)
+    console.log(session)
 
     return (
         <>
