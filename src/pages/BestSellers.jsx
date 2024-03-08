@@ -1,5 +1,3 @@
-import data1 from "../utils/bestsellers1.json"
-import data2 from "../utils/bestsellers2.json"
 import NavBar from "../components/NavBar"
 import BookCard from "../components/BookCard"
 import { Link } from "react-router-dom"
@@ -21,15 +19,25 @@ const BestSellers = () => {
                 <NavBar />
 
                 <div className="flex flex-col bg-wheat">
-                    <h3 className="font-lexend text-4xl text-teal-900 my-10 ml-10">POPULAR</h3>
+                    <h3 className="font-lexend text-4xl text-teal-900 my-10 ml-10">BESTSELLERS</h3>
                     <div className="flex flex-wrap gap-4 md:px-16 mx-auto">
-                        {/* {
-                            searchResults && searchResults.items && searchResults.items.map((book) => {
+                        {
+                            data && data.results && data.results.lists.map((list) => {
                                 return (
-                                    <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} /></Link>
+                                    <>
+                                        <h3 className="font-lexend text-2xl text-teal-900 my-5 ml-10">{list.display_name}</h3>
+                                        {
+                                            list.books.map((book) => {
+                                                return (
+                                                    <Link to={`/book/${book.primary_isbn10}`} state={book}><BookCard image={book.book_image} author={book.author} title={book.title} /></Link>
+                                                )
+                                            })
+                                        }
+                                    </>
+                                    
                                 )
                             })
-                        } */}
+                        }
                     </div>
                 </div>
             </> : <>

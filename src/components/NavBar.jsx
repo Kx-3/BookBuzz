@@ -25,7 +25,7 @@ const NavBar = () => {
             <div className="flex items-center gap-x-4 md:gap-x-32">
                 <button onClick={handleToggle}><GiHamburgerMenu /></button>
                 <div className="w-32 h-12 md:w-52 md:h-20">
-                    <Link to="/home"><img className="w-full h-full object-cover" src={logo} alt="Logo" /></Link>
+                    <Link to="/home"><img className="w-full h-full object-contain" src={logo} alt="Logo" /></Link>
                 </div>
                 <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64 md:w-auto lg:w-96">
                     <CiSearch />
