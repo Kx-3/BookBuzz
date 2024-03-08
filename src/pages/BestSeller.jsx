@@ -20,11 +20,11 @@ const Book = () => {
                     <h1 className="text-2xl text-teal-900">{book.title}</h1>
                     <h3 className="text-xl">{book.author}</h3>
                     <p className="font-inter text-sm">{isReadMore ? book.description.slice(0, 250) : book.description}<span onClick={handleToggle} className="cursor-pointer font-lexend text-teal-900 m-2">{isReadMore ? "...read more" : "show less"}</span></p>
-                    <ul className="text-xl flex flex-col"> Buy Now
+                    <ul className="text-xl flex flex-col list-disc"> Buy Now
                         {
                             book.buy_links.map((link) => {
                                 return (
-                                    <a href={link.url} target="_blank" className="text-teal-900">{link.name}</a>
+                                    <a href={link.url} target="_blank" className="font-inter text-lg text-teal-900">{link.name}</a>
                                 )
                             })
                         }
