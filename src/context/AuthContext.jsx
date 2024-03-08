@@ -5,13 +5,13 @@ import useFetch from "../hooks/useFetch";
 const AuthContext = createContext()
 
 const AuthProvider = ({ children }) => {
-    const G_KEY = import.meta.env.G_KEY
+    const G_KEY = import.meta.env.VITE_G_KEY
     const [session, setSession] = useState(null)
     const [search, setSearch] = useState('best')
     const [toggle, setToggle] = useState(false)
     const [searchResults, setSearchResults] = useState(null)
     const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`
-    const TIMES_KEY = import.meta.env.TIMES_KEY
+    const TIMES_KEY = import.meta.env.VITE_TIMES_KEY
     const timesUrl = `https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${TIMES_KEY}`
     const bestsellers = useFetch(timesUrl)    
     const data = useFetch(googleUrl)
