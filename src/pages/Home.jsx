@@ -19,15 +19,13 @@ const Home = () => {
             },
         })
         const data = await response.json()
-        console.log(data)
         setDiscoverbooks(data)
     }
     useEffect(()=>{
-        if(session !== null){
-            fetchBooks()
-        }
-    })
-    // console.log(session)
+        fetchBooks()
+    }, [])
+    console.log(discoverbooks)
+    console.log(session)
 
     return (
         <>
