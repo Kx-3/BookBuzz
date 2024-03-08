@@ -19,7 +19,7 @@ const Home = () => {
             },
         })
         const data = await response.json()
-        // console.log(data)
+        console.log(data)
         setDiscoverbooks(data)
     }
     useEffect(()=>{
@@ -27,7 +27,7 @@ const Home = () => {
             fetchBooks()
         }
     }, [])
-    console.log(session)
+    // console.log(session)
 
     return (
         <>
