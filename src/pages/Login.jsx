@@ -14,7 +14,6 @@ const Login = () => {
             console.log(error)
         } else {
             console.log(data)
-            localStorage.setItem("userData", data)
         }
     }
 
