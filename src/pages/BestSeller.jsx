@@ -19,7 +19,8 @@ const Book = () => {
                 <div className="font-lexend max-w-3xl p-5 flex flex-col gap-5">
                     <h1 className="text-2xl text-teal-900">{book.title}</h1>
                     <h3 className="text-xl">{book.author}</h3>
-                    <ul className="text-xl"> Buy Now
+                    <p className="font-inter text-sm">{isReadMore ? book.description.slice(0, 250) : book.description}<span onClick={handleToggle} className="cursor-pointer font-lexend text-teal-900 m-2">{isReadMore ? "...read more" : "show less"}</span></p>
+                    <ul className="text-xl flex flex-col"> Buy Now
                         {
                             book.buy_links.map((link) => {
                                 return (
@@ -28,7 +29,6 @@ const Book = () => {
                             })
                         }
                     </ul>
-                    <p className="font-inter text-sm">{isReadMore ? book.description.slice(0, 250) : book.description}<span onClick={handleToggle} className="cursor-pointer font-lexend text-teal-900 m-2">{isReadMore ? "...read more" : "show less"}</span></p>
                 </div>
             </div>
         </>

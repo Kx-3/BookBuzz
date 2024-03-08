@@ -32,7 +32,7 @@ const BestSellers = () => {
                                 return (
                                     <div className="flex flex-col">
                                         <h3 className="font-lexend text-2xl text-teal-900 my-5 ml-10">{list.display_name}</h3>
-                                        <div className="flex">
+                                        <div className="flex flex-wrap">
                                             {
                                                 list.books.map((book) => {
                                                     return (
