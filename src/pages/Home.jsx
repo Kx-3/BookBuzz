@@ -10,7 +10,8 @@ import "../App.css"
 
 const Home = () => {
     const { session, searchResults } = useContext(AuthContext)
-    const discoverbooks = useFetch("https://www.googleapis.com/books/v1/mylibrary/bookshelves/8/volumes")
+    const G_KEY = import.meta.env.G_KEY
+    const discoverbooks = useFetch(`https://www.googleapis.com/books/v1/mylibrary/bookshelves/8/volumes?key=${G_KEY}`)
     console.log(discoverbooks)
 
     return (

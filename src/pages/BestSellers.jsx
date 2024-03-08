@@ -7,17 +7,14 @@ import { useContext } from "react"
 import { AuthContext } from "../context/AuthContext"
 
 const BestSellers = () => {
-    const { session } = useContext(AuthContext)
-    const TIMES_KEY = 'MENH0JaFr7qfGXhh4KumJ4voGuddZQeo'
-    const timesUrl = `https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${TIMES_KEY}`
-    const data = useFetch(timesUrl)
-    if (data == null) {
+    const { session, bestsellers } = useContext(AuthContext)
+    
+    if (bestsellers == null) {
         return (
             <>Loading...</>
         )
     }
 
-    console.log(data)
 
     return (
         <>
@@ -28,7 +25,7 @@ const BestSellers = () => {
                     <h3 className="font-lexend text-4xl text-teal-900 my-10 ml-10">BESTSELLERS</h3>
                     <div className="flex flex-wrap gap-4 md:px-16 mx-auto">
                         {
-                            data && data.results && data.results.lists.map((list) => {
+                            bestsellers && bestsellers.results && bestsellers.results.lists.map((list) => {
                                 return (
                                     <div className="flex flex-col">
                                         <h3 className="font-lexend text-2xl text-teal-900 my-5 ml-10">{list.display_name}</h3>
