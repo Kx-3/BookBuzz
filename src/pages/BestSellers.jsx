@@ -11,8 +11,8 @@ const BestSellers = () => {
     const TIMES_KEY = 'MENH0JaFr7qfGXhh4KumJ4voGuddZQeo'
     const timesUrl = `https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${TIMES_KEY}`
     const data = useFetch(timesUrl)
-    if(data == null){
-        return(
+    if (data == null) {
+        return (
             <>Loading...</>
         )
     }
@@ -32,14 +32,16 @@ const BestSellers = () => {
                                 return (
                                     <div className="flex flex-col">
                                         <h3 className="font-lexend text-2xl text-teal-900 my-5 ml-10">{list.display_name}</h3>
-                                        {
-                                            list.books.map((book) => {
-                                                return (
-                                                    <Link to={`/book/${book.primary_isbn10}`} state={book}><BookCard image={book.book_image} author={book.author} title={book.title} /></Link>
-                                                )
-                                            })
-                                        }
-                                    </div> 
+                                        <div className="flex">
+                                            {
+                                                list.books.map((book) => {
+                                                    return (
+                                                        <Link to={`/bestseller/${book.primary_isbn10}`} state={book}><BookCard image={book.book_image} author={book.author} title={book.title} /></Link>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                    </div>
                                 )
                             })
                         }
