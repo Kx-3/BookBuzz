@@ -6,8 +6,8 @@ import coverimage from "../assets/coverimage.png"
 const Book = () => {
     const book = useLocation().state
     const [isReadMore, setIsReadMore] = useState(true)
-    const [favorites, setFavorites] = useState([])
-    const [toRead, setToRead] = useState([])
+    // const [favorites, setFavorites] = useState([])
+    // const [toRead, setToRead] = useState([])
     // const handleFavorites = (book) => {
     //     const isFavorite = favorites.some(favBook => favBook === book);
     //     if (!isFavorite) {
