@@ -6,15 +6,35 @@ import coverimage from "../assets/coverimage.png"
 const Book = () => {
     const book = useLocation().state
     const [isReadMore, setIsReadMore] = useState(true)
-    let favorites = []
-    let toread = []
+    const [favorites, setFavorites] = useState([]);
+    const [toread, setToread] = useState([]);
     const handleFavorites = (book) => {
-        favorites.push(book)
-        localStorage.setItem('favorites', JSON.stringify(favorites))
+        const isFavorite = favorites.some(favBook => favBook === book);
+        if (!isFavorite) {
+            // Add to favorites
+            const updatedFavorites = [...favorites, book];
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        } else if (isFavorite) {
+            // Remove from favorites
+            const updatedFavorites = favorites.filter(favBook => favBook !== book);
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        }
     }
     const handleToRead = (book) => {
-        toread.push(book)
-        localStorage.setItem('To-Read', JSON.stringify(toread))
+        const isToRead = toread.some(favBook => favBook === book);
+        if (!isToRead) {
+            // Add to favorites
+            const updatedToRead = [...toread, book];
+            setFavorites(updatedToRead);
+            localStorage.setItem('To-Read', JSON.stringify(updatedToRead));
+        } else if (isToRead) {
+            // Remove from favorites
+            const updatedToRead = toread.filter(favBook => favBook !== book);
+            setFavorites(updatedToRead);
+            localStorage.setItem('To-Read', JSON.stringify(updatedToRead));
+        }
     }
     const handleToggle = () => {
         setIsReadMore(!isReadMore)
