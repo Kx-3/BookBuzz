@@ -27,7 +27,7 @@ const Book = () => {
         if (!isToRead) {
             // Add to favorites
             const updatedToRead = [...toread, book];
-            setFavorites(updatedToRead);
+            setToread(updatedToRead);
             localStorage.setItem('To-Read', JSON.stringify(updatedToRead));
         } else if (isToRead) {
             // Remove from favorites
