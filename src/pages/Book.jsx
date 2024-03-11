@@ -6,22 +6,22 @@ import coverimage from "../assets/coverimage.png"
 const Book = () => {
     const book = useLocation().state
     const [isReadMore, setIsReadMore] = useState(true)
-    // const [favorites, setFavorites] = useState([])
+    const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem('favorites')) || [])
     // const [toRead, setToRead] = useState([])
-    // const handleFavorites = (book) => {
-    //     const isFavorite = favorites.some(favBook => favBook === book);
-    //     if (!isFavorite) {
-    //         // Add to favorites
-    //         const updatedFavorites = [...favorites, book];
-    //         setFavorites(updatedFavorites);
-    //         localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-    //     } else if (isFavorite) {
-    //         // Remove from favorites
-    //         const updatedFavorites = favorites.filter(favBook => favBook !== book);
-    //         setFavorites(updatedFavorites);
-    //         localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-    //     }
-    // }
+    const handleFavorites = (book) => {
+        const isFavorite = favorites.some(favBook => favBook === book);
+        if (!isFavorite) {
+            // Add to favorites
+            const updatedFavorites = [...favorites, book];
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        } else if (isFavorite) {
+            // Remove from favorites
+            const updatedFavorites = favorites.filter(favBook => favBook !== book);
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        }
+    }
     // const handleToRead = (book) => {
     //     const isToRead = toRead.some(toReadBook => toReadBook === book);
     //     if (!isToRead) {
@@ -54,7 +54,7 @@ const Book = () => {
                 </div>
                 <div className="flex flex-col font-lexend">
                     <button className="w-32 h-10 bg-teal-900 hover:bg-teal-700 text-white rounded-lg" onClick={handleFavorites(book)}>Add to favorites</button>
-                    <button className="w-32 h-10 bg-teal-900 hover:bg-teal-700 text-white rounded-lg" onClick={handleToRead(book)}>Add to to-read</button>
+                    <button className="w-32 h-10 bg-teal-900 hover:bg-teal-700 text-white rounded-lg" >Add to to-read</button>
                 </div>
             </div>
         </>
