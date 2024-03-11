@@ -1,6 +1,5 @@
 import logo from "../assets/logo.png"
 import user from "../assets/user.jpg"
-import { CiSearch } from "react-icons/ci";
 import { IoIosLogOut } from "react-icons/io";
 import "../App.css"
 import { useContext } from "react"

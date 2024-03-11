@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar"
 import useFetch from "../hooks/useFetch"
 import BookCard from "../components/BookCard"
+import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 import { AuthContext } from "../context/AuthContext"
