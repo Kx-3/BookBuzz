@@ -51,7 +51,7 @@ const Home = () => {
         return favorites.includes(book);
     }
     const isToRead = (book) => {
-        return favorites.includes(book);
+        return toread.includes(book);
     }
 
     return (
