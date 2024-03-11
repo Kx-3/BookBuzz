@@ -11,7 +11,7 @@ import "../App.css"
 const Home = () => {
     const { session } = useContext(AuthContext)
     const G_KEY = import.meta.env.VITE_G_KEY
-    const url = `https://books.googleapis.com/books/v1/users/118130695204436542958/bookshelves/8/volumes?key=${G_KEY}`
+    const url = `https://www.googleapis.com/books/v1/volumes?q=flowers&key=${G_KEY}`
     const discoverBooks = useFetch(url)
     
     return (
