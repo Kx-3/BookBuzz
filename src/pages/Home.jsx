@@ -10,22 +10,12 @@ import "../App.css"
 
 const Home = () => {
     const { session, searchResults } = useContext(AuthContext)
-    const [favorites, setFavorites] = useState([]);
+    const favorites = []
     const G_KEY = import.meta.env.VITE_G_KEY
     
     const handleFavorites = (book) => {
-        const isFavorite = favorites.some(favBook => favBook === book);
-        if (!isFavorite) {
-            // Add to favorites
-            const updatedFavorites = [...favorites, book];
-            setFavorites(updatedFavorites);
-            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-        } else if (isFavorite) {
-            // Remove from favorites
-            const updatedFavorites = favorites.filter(favBook => favBook !== book);
-            setFavorites(updatedFavorites);
-            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-        }
+        favorites.push(book)
+        localStorage.setItem("favorites", JSON.stringify(favorites))
     }
 
     return (
