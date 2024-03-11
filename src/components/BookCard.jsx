@@ -7,7 +7,6 @@ const BookCard = ({ image, title, author, fn }) => {
             <div>
                 <p className="font-lexend text-teal-900 font-semibold text-pretty">{title}</p>
                 <p>{author}</p>
-                <button className=" bg-teal-900 hover:bg-teal-700 text-white font-lexend" onClick={fn}>Add to favorites</button>
             </div>
         </button>
     )
