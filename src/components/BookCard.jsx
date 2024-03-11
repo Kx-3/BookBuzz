@@ -1,4 +1,4 @@
-const BookCard = ({ image, title, author, fn }) => {
+const BookCard = ({ image, title, author }) => {
     return (
         <button className=" text-left hover:bg-teal-900/20 hover:border hover:border-teal-900 font-inter w-60 flex flex-col border-black rounded-lg p-6 justify-center items-start gap-5">
             <div className="">

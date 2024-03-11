@@ -2,6 +2,10 @@ import NavBar from "../components/NavBar"
 import useFetch from "../hooks/useFetch"
 import BookCard from "../components/BookCard"
 import { CiSearch } from "react-icons/ci";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { FaHeart } from "react-icons/fa";
+import { IoBookmarkOutline } from "react-icons/io5";
+import { IoBookmark } from "react-icons/io5";
 import { Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 import { AuthContext } from "../context/AuthContext"
@@ -10,13 +14,50 @@ import "../App.css"
 
 const SearchPage = () => {
     const { session, search, handleSearch, handleInput, searchResults } = useContext(AuthContext)
+    const [favorites, setFavorites] = useState([]);
+    const [toread, setToread] = useState([]);
+    const handleFavorites = (book) => {
+        const isFavorite = favorites.some(favBook => favBook === book);
+        if (!isFavorite) {
+            // Add to favorites
+            const updatedFavorites = [...favorites, book];
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        } else if (isFavorite) {
+            // Remove from favorites
+            const updatedFavorites = favorites.filter(favBook => favBook !== book);
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        }
+    }
+    const handleToRead = (book) => {
+        const isToRead = toread.some(favBook => favBook === book);
+        if (!isToRead) {
+            // Add to favorites
+            const updatedToRead = [...toread, book];
+            setToread(updatedToRead);
+            localStorage.setItem('To-Read', JSON.stringify(updatedToRead));
+        } else if (isToRead) {
+            // Remove from favorites
+            const updatedToRead = toread.filter(favBook => favBook !== book);
+            setFavorites(updatedToRead);
+            localStorage.setItem('To-Read', JSON.stringify(updatedToRead));
+        }
+    }
+
+    const isFavorite = (book) => {
+        return favorites.includes(book);
+    }
+    const isToRead = (book) => {
+        return favorites.includes(book);
+    }
     return (
         <>
             {session ? <>
                 <NavBar />
 
                 <div className="flex flex-col bg-wheat">
-                    <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64 md:w-auto lg:w-96">
+                    <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64">
                         <CiSearch />
                         <form action="" className="flex" onSubmit={handleSearch}>
                             <input className="w-5/6 font-inter focus:outline-none bg-transparent" type="text" placeholder="Search" value={search} onChange={handleInput} />
@@ -27,7 +68,13 @@ const SearchPage = () => {
                         {
                             searchResults && searchResults.items && searchResults.items.map((book) => {
                                 return (
-                                    <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} /></Link>
+                                    <Link to={`/book/${book.id}`} state={book}>
+                                        <BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} />
+                                        <div className="flex">
+                                            <button onClick={() => handleFavorites(book)} className="text-red-500">{isFavorite(book) ? <FaHeart /> : <IoIosHeartEmpty />}</button>
+                                            <button onClick={() => handleToRead(book)} className="text-teal-900">{isToRead(book) ? <IoBookmark /> : <IoBookmarkOutline />}</button>
+                                        </div>
+                                    </Link>
                                 )
                             })
                         }

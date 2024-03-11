@@ -1,6 +1,9 @@
-import data from "../utils/data.json"
 import NavBar from "../components/NavBar"
 import useFetch from "../hooks/useFetch"
+import { IoIosHeartEmpty } from "react-icons/io";
+import { FaHeart } from "react-icons/fa";
+import { IoBookmarkOutline } from "react-icons/io5";
+import { IoBookmark } from "react-icons/io5";
 import BookCard from "../components/BookCard"
 import { Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
@@ -11,9 +14,46 @@ import "../App.css"
 const Home = () => {
     const { session } = useContext(AuthContext)
     const G_KEY = import.meta.env.VITE_G_KEY
-    const url = `https://www.googleapis.com/books/v1/volumes?q=flowers&key=${G_KEY}`
+    const url = `https://www.googleapis.com/books/v1/volumes?q=potter&key=${G_KEY}`
     const discoverBooks = useFetch(url)
-    
+    const [favorites, setFavorites] = useState([]);
+    const [toread, setToread] = useState([]);
+    const handleFavorites = (book) => {
+        const isFavorite = favorites.some(favBook => favBook === book);
+        if (!isFavorite) {
+            // Add to favorites
+            const updatedFavorites = [...favorites, book];
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        } else if (isFavorite) {
+            // Remove from favorites
+            const updatedFavorites = favorites.filter(favBook => favBook !== book);
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        }
+    }
+    const handleToRead = (book) => {
+        const isToRead = toread.some(favBook => favBook === book);
+        if (!isToRead) {
+            // Add to favorites
+            const updatedToRead = [...toread, book];
+            setToread(updatedToRead);
+            localStorage.setItem('To-Read', JSON.stringify(updatedToRead));
+        } else if (isToRead) {
+            // Remove from favorites
+            const updatedToRead = toread.filter(favBook => favBook !== book);
+            setFavorites(updatedToRead);
+            localStorage.setItem('To-Read', JSON.stringify(updatedToRead));
+        }
+    }
+
+    const isFavorite = (book) => {
+        return favorites.includes(book);
+    }
+    const isToRead = (book) => {
+        return favorites.includes(book);
+    }
+
     return (
         <>
             {/* <NavBar />
@@ -39,7 +79,13 @@ const Home = () => {
                         {
                             discoverBooks && discoverBooks.items && discoverBooks.items.map((book) => {
                                 return (
-                                    <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title}/></Link>
+                                    <Link to={`/book/${book.id}`} state={book}>
+                                        <BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} />
+                                        <div className="flex">
+                                            <button onClick={() => handleFavorites(book)} className="text-red-500">{isFavorite(book) ? <FaHeart /> : <IoIosHeartEmpty />}</button>
+                                            <button onClick={() => handleToRead(book)} className="text-teal-900">{isToRead(book) ? <IoBookmark /> : <IoBookmarkOutline />}</button>
+                                        </div>
+                                    </Link>
                                 )
                             })
                         }
