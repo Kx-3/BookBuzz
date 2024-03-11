@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx'
 import BestSellers from './pages/BestSellers.jsx'
 import Book from './pages/Book.jsx'
 import BestSeller from './pages/BestSeller.jsx'
+import Favorites from './pages/Favorites.jsx'
 import { AuthProvider } from "./context/AuthContext.jsx"
 
 const paths = createBrowserRouter([
@@ -30,6 +31,10 @@ const paths = createBrowserRouter([
   {
     path: '/bestsellers',
     element: <BestSellers />
+  },
+  {
+    path: '/favorites',
+    element: <Favorites />
   },
 ])
 

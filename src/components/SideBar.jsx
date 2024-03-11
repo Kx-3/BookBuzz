@@ -5,7 +5,7 @@ import { AuthContext } from "../context/AuthContext"
 
 
 const SideBar = () => {
-    const { handleToggle} = useContext(AuthContext)
+    const { handleToggle } = useContext(AuthContext)
 
     return (
         <>
@@ -13,7 +13,7 @@ const SideBar = () => {
                 <button onClick={handleToggle} className="absolute top-0 right-0">X</button>
                 <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/home">Home</Link>
                 <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/bestsellers">Bestsellers</Link>
-                <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="">My Favorites</Link>
+                <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/favorites">My Favorites</Link>
             </div>
         </>
     )
