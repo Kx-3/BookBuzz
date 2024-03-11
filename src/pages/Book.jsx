@@ -53,7 +53,7 @@ const Book = () => {
                     <p className="font-inter text-sm">{isReadMore ? book.volumeInfo.description.slice(0, 250) : book.volumeInfo.description}<span onClick={handleToggle} className="cursor-pointer font-lexend text-teal-900 m-2">{isReadMore ? "...read more" : "show less"}</span></p>
                 </div>
                 <div className="flex flex-col font-lexend">
-                    <button className="w-32 h-10 bg-teal-900 hover:bg-teal-700 text-white rounded-lg" onClick={handleFavorites(book)}>Add to favorites</button>
+                    <button className="w-32 h-10 bg-teal-900 hover:bg-teal-700 text-white rounded-lg" >Add to favorites</button>
                     <button className="w-32 h-10 bg-teal-900 hover:bg-teal-700 text-white rounded-lg" >Add to to-read</button>
                 </div>
             </div>
