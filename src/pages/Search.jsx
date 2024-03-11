@@ -60,7 +60,7 @@ const SearchPage = () => {
                     <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64 md:w-2/3">
                         <CiSearch />
                         <form action="" className="flex" onSubmit={handleSearch}>
-                            <input className="w-5/6 font-inter focus:outline-none bg-transparent" type="text" placeholder="Search" value={search} onChange={handleInput} />
+                            <input className="w-2/3 font-inter focus:outline-none bg-transparent" type="text" placeholder="Search" value={search} onChange={handleInput} />
                             <button type="submit" className="w-[100px] h-10 bg-teal-900 font-lexend hover:text-slate-100 hover:bg-teal-700 text-white rounded-lg">Search</button>
                         </form>
                     </div>
