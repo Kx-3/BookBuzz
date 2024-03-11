@@ -8,34 +8,34 @@ const Book = () => {
     const [isReadMore, setIsReadMore] = useState(true)
     const [favorites, setFavorites] = useState([])
     const [toRead, setToRead] = useState([])
-    const handleFavorites = (book) => {
-        const isFavorite = favorites.some(favBook => favBook === book);
-        if (!isFavorite) {
-            // Add to favorites
-            const updatedFavorites = [...favorites, book];
-            setFavorites(updatedFavorites);
-            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-        } else if (isFavorite) {
-            // Remove from favorites
-            const updatedFavorites = favorites.filter(favBook => favBook !== book);
-            setFavorites(updatedFavorites);
-            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-        }
-    }
-    const handleToRead = (book) => {
-        const isToRead = toRead.some(toReadBook => toReadBook === book);
-        if (!isToRead) {
-            // Add to favorites
-            const updatedToRead = [...toRead, book];
-            setToRead(updatedToRead);
-            localStorage.setItem('ToRead', JSON.stringify(updatedToRead));
-        } else if (isToRead) {
-            // Remove from favorites
-            const updatedToRead = toRead.filter(toReadBook => toReadBook !== book);
-            setToRead(updatedToRead);
-            localStorage.setItem('ToRead', JSON.stringify(updatedToRead));
-        }
-    }
+    // const handleFavorites = (book) => {
+    //     const isFavorite = favorites.some(favBook => favBook === book);
+    //     if (!isFavorite) {
+    //         // Add to favorites
+    //         const updatedFavorites = [...favorites, book];
+    //         setFavorites(updatedFavorites);
+    //         localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    //     } else if (isFavorite) {
+    //         // Remove from favorites
+    //         const updatedFavorites = favorites.filter(favBook => favBook !== book);
+    //         setFavorites(updatedFavorites);
+    //         localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    //     }
+    // }
+    // const handleToRead = (book) => {
+    //     const isToRead = toRead.some(toReadBook => toReadBook === book);
+    //     if (!isToRead) {
+    //         // Add to favorites
+    //         const updatedToRead = [...toRead, book];
+    //         setToRead(updatedToRead);
+    //         localStorage.setItem('ToRead', JSON.stringify(updatedToRead));
+    //     } else if (isToRead) {
+    //         // Remove from favorites
+    //         const updatedToRead = toRead.filter(toReadBook => toReadBook !== book);
+    //         setToRead(updatedToRead);
+    //         localStorage.setItem('ToRead', JSON.stringify(updatedToRead));
+    //     }
+    // }
     const handleToggle = () => {
         setIsReadMore(!isReadMore)
     }
