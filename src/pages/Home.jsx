@@ -10,23 +10,9 @@ import "../App.css"
 
 const Home = () => {
     const { session, searchResults } = useContext(AuthContext)
-    const [discoverbooks, setDiscoverbooks] = useState(null)
     const [favorites, setFavorites] = useState([]);
     const G_KEY = import.meta.env.VITE_G_KEY
-    const fetchBooks = async () => {
-        const response = await fetch(`https://www.googleapis.com/books/v1/mylibrary/bookshelves/8/volumes?key=${G_KEY}`,{
-            headers:{
-                'Authorization':`Bearer ${session.access_token}`
-            },
-        })
-        const data = await response.json()
-        setDiscoverbooks(data)
-    }
-    useEffect(()=>{
-        fetchBooks()
-    }, [])
-    console.log(discoverbooks)
-    console.log(session)
+    
     const handleFavorites = (book) => {
         const isFavorite = favorites.some(favBook => favBook === book);
         if (!isFavorite) {
