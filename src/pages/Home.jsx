@@ -79,13 +79,16 @@ const Home = () => {
                         {
                             discoverBooks && discoverBooks.items && discoverBooks.items.map((book) => {
                                 return (
-                                    <Link to={`/book/${book.id}`} state={book}>
-                                        <BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} />
-                                        <div className="flex">
+                                    <div className="flex flex-col">
+                                        <Link to={`/book/${book.id}`} state={book}>
+                                            <BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} />
+                                        </Link>
+                                        <div className="flex flex-col justify-around">
                                             <button onClick={() => handleFavorites(book)} className="text-red-500">{isFavorite(book) ? <FaHeart /> : <IoIosHeartEmpty />}</button>
                                             <button onClick={() => handleToRead(book)} className="text-teal-900">{isToRead(book) ? <IoBookmark /> : <IoBookmarkOutline />}</button>
                                         </div>
-                                    </Link>
+                                    </div>
+
                                 )
                             })
                         }

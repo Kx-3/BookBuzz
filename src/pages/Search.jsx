@@ -49,7 +49,7 @@ const SearchPage = () => {
         return favorites.includes(book);
     }
     const isToRead = (book) => {
-        return favorites.includes(book);
+        return toread.includes(book);
     }
     return (
         <>
@@ -68,7 +68,7 @@ const SearchPage = () => {
                         {
                             searchResults && searchResults.items && searchResults.items.map((book) => {
                                 return (
-                                    <>
+                                    <div className="flex flex-col">
                                         <Link to={`/book/${book.id}`} state={book}>
                                             <BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} />
                                         </Link>
@@ -76,7 +76,7 @@ const SearchPage = () => {
                                             <button onClick={() => handleFavorites(book)} className="text-red-500">{isFavorite(book) ? <FaHeart /> : <IoIosHeartEmpty />}</button>
                                             <button onClick={() => handleToRead(book)} className="text-teal-900">{isToRead(book) ? <IoBookmark /> : <IoBookmarkOutline />}</button>
                                         </div>
-                                    </>
+                                    </div>
 
                                 )
                             })
