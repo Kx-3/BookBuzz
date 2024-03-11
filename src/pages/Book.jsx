@@ -6,6 +6,16 @@ import coverimage from "../assets/coverimage.png"
 const Book = () => {
     const book = useLocation().state
     const [isReadMore, setIsReadMore] = useState(true)
+    const favorites = []
+    const toread = []
+    const handleFavorites = (book) => {
+        favorites.push(book)
+        localStorage.setItem('favorites', JSON.stringify(favorites))
+    }
+    const handleToRead = (book) => {
+        toread.push(book)
+        localStorage.setItem('To-Read', JSON.stringify(toread))
+    }
     const handleToggle = () => {
         setIsReadMore(!isReadMore)
     }
@@ -21,6 +31,10 @@ const Book = () => {
                     <h3 className="text-xl">{book.volumeInfo.authors ? book.volumeInfo.authors[0]: "Not found"}</h3>
                     <p>Pages: {book.volumeInfo.pageCount}</p>
                     <p className="font-inter text-sm">{isReadMore ? book.volumeInfo.description.slice(0, 250) : book.volumeInfo.description}<span onClick={handleToggle} className="cursor-pointer font-lexend text-teal-900 m-2">{isReadMore ? "...read more" : "show less"}</span></p>
+                </div>
+                <div className="flex flex-col">
+                    <button className="font-lexend text-white bg-teal-900 hover:bg-teal-700 px-3" onClick={handleFavorites(book)}>Add to favorites</button> 
+                    <button className="font-lexend text-white bg-teal-900 hover:bg-teal-700 px-3" onClick={handleToRead(book)}>Add to to-read</button> 
                 </div>
             </div>
         </>
