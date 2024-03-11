@@ -11,6 +11,7 @@ import "../App.css"
 const Home = () => {
     const { session, searchResults } = useContext(AuthContext)
     const [discoverbooks, setDiscoverbooks] = useState(null)
+    const [favorites, setFavorites] = useState([]);
     const G_KEY = import.meta.env.VITE_G_KEY
     const fetchBooks = async () => {
         const response = await fetch(`https://www.googleapis.com/books/v1/mylibrary/bookshelves/8/volumes?key=${G_KEY}`,{
@@ -26,6 +27,20 @@ const Home = () => {
     }, [])
     console.log(discoverbooks)
     console.log(session)
+    const handleFavorites = (book) => {
+        const isFavorite = favorites.some(favBook => favBook === book);
+        if (!isFavorite) {
+            // Add to favorites
+            const updatedFavorites = [...favorites, book];
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        } else if (isFavorite) {
+            // Remove from favorites
+            const updatedFavorites = favorites.filter(favBook => favBook !== book);
+            setFavorites(updatedFavorites);
+            localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+        }
+    }
 
     return (
         <>
@@ -52,7 +67,7 @@ const Home = () => {
                         {
                             searchResults && searchResults.items && searchResults.items.map((book) => {
                                 return (
-                                    <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} /></Link>
+                                    <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} fn={handleFavorites(book)} /></Link>
                                 )
                             })
                         }
