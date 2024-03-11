@@ -57,7 +57,7 @@ const SearchPage = () => {
                 <NavBar />
 
                 <div className="flex flex-col bg-wheat">
-                    <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64">
+                    <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64 md:w-2/3">
                         <CiSearch />
                         <form action="" className="flex" onSubmit={handleSearch}>
                             <input className="w-5/6 font-inter focus:outline-none bg-transparent" type="text" placeholder="Search" value={search} onChange={handleInput} />
@@ -68,13 +68,16 @@ const SearchPage = () => {
                         {
                             searchResults && searchResults.items && searchResults.items.map((book) => {
                                 return (
-                                    <Link to={`/book/${book.id}`} state={book}>
-                                        <BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} />
-                                        <div className="flex">
+                                    <>
+                                        <Link to={`/book/${book.id}`} state={book}>
+                                            <BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title} />
+                                        </Link>
+                                        <div className="flex flex-col justify-around">
                                             <button onClick={() => handleFavorites(book)} className="text-red-500">{isFavorite(book) ? <FaHeart /> : <IoIosHeartEmpty />}</button>
                                             <button onClick={() => handleToRead(book)} className="text-teal-900">{isToRead(book) ? <IoBookmark /> : <IoBookmarkOutline />}</button>
                                         </div>
-                                    </Link>
+                                    </>
+
                                 )
                             })
                         }
