@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 
 const NavBar = () => {
-    const { session, search, handleSearch, handleInput, toggle, handleToggle } = useContext(AuthContext)
+    const { session, toggle, handleToggle } = useContext(AuthContext)
     async function signOut() {
         const { error } = await supabase.auth.signOut()
         if (error) {

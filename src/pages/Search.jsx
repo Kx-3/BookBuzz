@@ -9,7 +9,7 @@ import coverimage from "../assets/coverimage.png"
 import "../App.css"
 
 const SearchPage = () => {
-    const { session, searchResults } = useContext(AuthContext)
+    const { session, search, handleSearch, handleInput, searchResults } = useContext(AuthContext)
     return (
         <>
             {session ? <>
