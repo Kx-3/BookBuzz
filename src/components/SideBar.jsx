@@ -14,6 +14,8 @@ const SideBar = () => {
                 <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/home">Home</Link>
                 <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/bestsellers">Bestsellers</Link>
                 <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/favorites">My Favorites</Link>
+                <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/toread">To-Read</Link>
+                <Link className="w-4/5 rounded-lg flex justify-center hover:bg-wheat text-teal-900" to="/search">Search</Link>
             </div>
         </>
     )

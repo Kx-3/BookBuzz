@@ -9,8 +9,10 @@ import coverimage from "../assets/coverimage.png"
 import "../App.css"
 
 const Home = () => {
-    const { session, searchResults } = useContext(AuthContext)
+    const { session } = useContext(AuthContext)
     const G_KEY = import.meta.env.VITE_G_KEY
+    const url = `https://books.googleapis.com/books/v1/users/118130695204436542958/bookshelves/8/volumes?key=${G_KEY}`
+    const discoverBooks = useFetch(url)
     
     return (
         <>
@@ -35,7 +37,7 @@ const Home = () => {
                     <h3 className="font-lexend text-4xl text-teal-900 my-10 ml-10">POPULAR</h3>
                     <div className="flex flex-wrap gap-4 md:px-16 mx-auto">
                         {
-                            searchResults && searchResults.items && searchResults.items.map((book) => {
+                            discoverBooks && discoverBooks.items && discoverBooks.items.map((book) => {
                                 return (
                                     <Link to={`/book/${book.id}`} state={book}><BookCard image={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : coverimage} author={book.volumeInfo.authors ? book.volumeInfo.authors[0] : "Not found"} title={book.volumeInfo.title}/></Link>
                                 )

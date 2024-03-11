@@ -7,7 +7,7 @@ const AuthContext = createContext()
 const AuthProvider = ({ children }) => {
     const G_KEY = import.meta.env.VITE_G_KEY
     const [session, setSession] = useState(null)
-    const [search, setSearch] = useState('best')
+    const [search, setSearch] = useState('')
     const [toggle, setToggle] = useState(false)
     const [searchResults, setSearchResults] = useState(null)
     const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`
