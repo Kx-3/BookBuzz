@@ -22,7 +22,7 @@ const NavBar = () => {
     return (
         <nav className="w-auto bg-peach flex items-center justify-between py-4 md:py-8 md:pr-24 px-6">
             <div className="flex items-center gap-x-4 md:gap-x-32">
-                <button className="h-32 w-32" onClick={handleToggle}><GiHamburgerMenu /></button>
+                <button className="" onClick={handleToggle}><GiHamburgerMenu className="w-full h-full" /></button>
                 <div className="w-32 h-12 md:w-52 md:h-20">
                     <Link to="/home"><img className="w-full h-full object-contain" src={logo} alt="Logo" /></Link>
                 </div>
