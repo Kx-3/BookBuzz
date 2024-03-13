@@ -57,7 +57,7 @@ const SearchPage = () => {
                 <NavBar />
 
                 <div className="flex flex-col bg-wheat">
-                    <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-between items-center border-black border-1 bg-wheat w-64 md:w-2/3">
+                    <div className="h-10 px-2 rounded-lg gap-x-3 flex justify-center items-center border-black border-1 bg-wheat w-64 md:w-2/3">
                         <CiSearch />
                         <form action="" className="flex w-2/3" onSubmit={handleSearch}>
                             <input className="w-2/3 font-inter focus:outline-none bg-transparent" type="text" placeholder="Search" value={search} onChange={handleInput} />

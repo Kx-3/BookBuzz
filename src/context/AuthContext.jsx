@@ -10,7 +10,7 @@ const AuthProvider = ({ children }) => {
     const [search, setSearch] = useState('')
     const [toggle, setToggle] = useState(false)
     const [searchResults, setSearchResults] = useState(null)
-    const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${G_KEY}`
+    const googleUrl = `https://www.googleapis.com/books/v1/volumes?q=${search}&printType=books&maxResults=30&startIndex=0&key=${G_KEY}`
     const TIMES_KEY = import.meta.env.VITE_TIMES_KEY
     const timesUrl = `https://api.nytimes.com/svc/books/v3/lists/full-overview.json?api-key=${TIMES_KEY}`
     const bestsellers = useFetch(timesUrl)    
