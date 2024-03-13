@@ -14,7 +14,7 @@ import "../App.css"
 const Home = () => {
     const { session } = useContext(AuthContext)
     const G_KEY = import.meta.env.VITE_G_KEY
-    const url = `https://www.googleapis.com/books/v1/volumes?q=love&printType=books&maxResults=40&startIndex=0&key=${G_KEY}`
+    const url = `https://www.googleapis.com/books/v1/volumes?q=potter&printType=books&maxResults=40&startIndex=0&key=${G_KEY}`
     const discoverBooks = useFetch(url)
     const [favorites, setFavorites] = useState([]);
     const [toread, setToread] = useState([]);
