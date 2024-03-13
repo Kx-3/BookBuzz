@@ -30,7 +30,7 @@ const Book = () => {
                     <h1 className="text-2xl text-teal-900">{book.volumeInfo.title}</h1>
                     <h3 className="text-xl">{book.volumeInfo.authors ? book.volumeInfo.authors[0]: "Not found"}</h3>
                     <p>Pages: {book.volumeInfo.pageCount}</p>
-                    <p>Main Category: {details.volumeInfo.mainCategory}</p>
+                    <p>Main Category: {details.volumeInfo.categories[0]}</p>
                     <p>Rating: {details.volumeInfo.averageRating}</p>
                     <p className="font-inter text-sm">{isReadMore ? book.volumeInfo.description.slice(0, 250) : book.volumeInfo.description}<span onClick={handleToggle} className="cursor-pointer font-lexend text-teal-900 m-2">{isReadMore ? "...read more" : "show less"}</span></p>
                 </div>
