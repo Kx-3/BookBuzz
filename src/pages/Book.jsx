@@ -12,12 +12,13 @@ const Book = () => {
     const handleToggle = () => {
         setIsReadMore(!isReadMore)
     }
-    
+
     if(details == null){
         return(
             <div>Loading...</div>
         )
     }
+    console.log(details)
     return (
         <>
             <NavBar />
